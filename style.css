@@ -683,9 +683,6 @@
      }
 
      
-     }
-
-     
      img {
          width: 100%;
          border: 1px solid purple;
@@ -700,7 +697,13 @@
      p {
          text-align: center;
      }
- 
+  .retourAccueil{
+        width: 60vw;
+     }
+     
+     }
 
 
+
  
+
