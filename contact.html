@@ -60,26 +60,26 @@
 <body>
     <div id="ongletContact">
         <div id="contact">
-
+ <form action="https://formspree.io/f/xdalalrb" method="POST">
             <div class="nomTel">
                 <p>
                     <legend>Nom</legend>
-                    <input type="text" id="nom" name="nom" aria-required="true" minlength="1">
+                    <input type="text" id="nom" name="nom" aria-required="true" minlength="1" autocomplete="name">
                 </p>
                 <p>
                     <legend>Téléphone</legend>
-                    <input type="tel" id="tel" name="tel" maxlength="10" minlength="10">
+                    <input type="tel" id="tel" name="tel" maxlength="10" minlength="10" autocomplete="tel">
                 </p>
 
             </div>
             <div class="Mailentreprise">
                 <p>
                     <legend>Entreprise</legend>
-                    <input type="text" id="Entreprise" name="Entreprise" aria-required="true" minlength="1">
+                    <input type="text" id="Entreprise" name="Entreprise" aria-required="true" minlength="1"  autocomplete="organization">
                 </p>
                 <p>
                     <legend>E-Mail</legend>
-                    <input type="email" id="mail" name="mail" aria-required="true">
+                    <input type="email" id="mail" name="mail" aria-required="true" autocomplete="email">
                 </p>
             </div>
             <div class="message">
@@ -89,15 +89,15 @@
 
             <button type="submit">Envoyer</button>
 
-
+ </form>
         </div>
 
         <div id="contactinfo">
             <p>Si vous le souhaitez, vous pouvez me contacter:</p>
             <ul>
-                <li>Par mail à:</li>
+                <li>Par mail à :</li>
                 <a class="liencontact" href="mailto:yannmonory@gmail.com">yannmonory@gmail.com</a>
-                <li>Par téléphone au:</li>
+                <li>Par téléphone au :</li>
                 <a class="liencontact" href="tel:0664994478">06.64.99.44.78</a>
             </ul>
         </div>
@@ -112,3 +112,4 @@
 
 
 </html>
+
