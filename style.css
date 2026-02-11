@@ -243,6 +243,12 @@ form{
      box-shadow: 0px 0px 20px purple;
      background-color: #170328;
      border-radius: 20px;
+      
+ .champsObligatoires {       
+         font-style: italic;
+         font-size: xx-small;
+         color: white;
+     }
 
      .nomTel {
 
@@ -713,5 +719,6 @@ form{
 
 
  
+
 
 
