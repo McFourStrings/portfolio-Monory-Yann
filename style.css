@@ -225,6 +225,12 @@
     scale: 1;
 }
 
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
  #contact {
      display: flex;
      flex-wrap: wrap;
@@ -663,6 +669,7 @@
      }
 
      #contact {
+         width: 80vw;
          button:hover {
              scale: 1.0;
          }
@@ -706,4 +713,5 @@
 
 
  
+
 
