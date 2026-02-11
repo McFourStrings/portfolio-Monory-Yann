@@ -63,8 +63,8 @@
  <form action="https://formspree.io/f/xdalalrb" method="POST">
             <div class="nomTel">
                 <p>
-                    <legend>Nom</legend>
-                    <input type="text" id="nom" name="nom" aria-required="true" minlength="1" autocomplete="name">
+                    <legend>Nom *</legend>
+                    <input type="text" id="nom" name="nom" aria-required="true" minlength="1" autocomplete="name" required>
                 </p>
                 <p>
                     <legend>Téléphone</legend>
@@ -78,22 +78,23 @@
                     <input type="text" id="Entreprise" name="Entreprise" aria-required="true" minlength="1"  autocomplete="organization">
                 </p>
                 <p>
-                    <legend>E-Mail</legend>
-                    <input type="email" id="mail" name="mail" aria-required="true" autocomplete="email">
+                    <legend>E-Mail *</legend>
+                    <input type="email" id="mail" name="mail" aria-required="true" autocomplete="email" required>
                 </p>
             </div>
             <div class="message">
-                <legend>Message</legend>
-                <textarea name="message" required minlength="1" maxlength="250" placeholder="Votre message ici"></textarea>
+                <legend>Message *</legend>
+                <textarea name="message" required minlength="1" maxlength="250" placeholder="Votre message ici" required></textarea>
             </div>
 
             <button type="submit">Envoyer</button>
 
  </form>
+            <p class="champsObligatoires">* Champs obligatoire</p>
         </div>
 
         <div id="contactinfo">
-            <p>Si vous le souhaitez, vous pouvez également me contacter:</p>
+            <p>Si vous le souhaitez, vous pouvez également me contacter :</p>
             <ul>
                 <li>Par mail à :</li>
                 <a class="liencontact" href="mailto:yannmonory@gmail.com">yannmonory@gmail.com</a>
@@ -112,6 +113,7 @@
 
 
 </html>
+
 
 
 
