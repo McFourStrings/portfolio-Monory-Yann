@@ -15,49 +15,9 @@
 
     <title>Contact Monory Yann</title>
 </head>
-<div id="cursor-trail"></div>
 
-<script>
-    const container = document.getElementById("cursor-trail");
 
-    const DOTS = 12; // longueur de la traînée
-    const dots = [];
 
-    for (let i = 0; i < DOTS; i++) {
-        const dot = document.createElement("div");
-        dot.className = "trail-dot";
-        container.appendChild(dot);
-        dots.push({ el: dot, x: 0, y: 0 });
-    }
-
-    let mouseX = 0;
-    let mouseY = 0;
-
-    document.addEventListener("mousemove", (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-    });
-
-    function animate() {
-        let x = mouseX;
-        let y = mouseY;
-
-        dots.forEach((dot, index) => {
-            dot.x += (x - dot.x) * 0.35;
-            dot.y += (y - dot.y) * 0.35;
-
-            dot.el.style.transform = `translate(${dot.x}px, ${dot.y}px) scale(${1 - index * 0.05})`;
-            dot.el.style.opacity = `${1 - index * 0.07}`;
-
-            x = dot.x;
-            y = dot.y;
-        });
-
-        requestAnimationFrame(animate);
-    }
-
-    animate();
-</script>
 
 <body>
     <div id="ongletContact">
