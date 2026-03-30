@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Orbitron";
+    font-optical-sizing: auto;
+    cursor: url(assets/arrowhead-rounded-outline.svg), auto;
+    overflow-x: hidden;
+    
+    
+
+}
+
+body {
+    background-image: url(assets/background.jpg);
+    overflow: hidden;
+}
+
+.page-index{
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    gap: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.liens-mobile {
+    display: none;
+}
+
+.liens-desktop ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.liens-desktop li {
+    height: 50vh;
+    width: 20vw;
+    font-size: 3rem;
+}
+
+.liens-desktop a:hover {
+    scale: 1.0;
+}
+
+main {
+    margin-bottom: 20vh;
+}
+
+.page-contact,
+.page-projets {
+    overflow: scroll;
+}
+
+h1,
+h2 {
+    color: white;
+    border: 1px solid #170328;
+    font-size: xx-large;
+    background: #800080;
+    background: radial-gradient(circle, rgba(128, 0, 128, 1) 0%, rgba(53, 11, 87, 1) 50%, rgba(27, 4, 46, 1) 100%);
+    background-size: 300% 100%;
+    animation: animationTest 5s linear infinite alternate;
+    animation-fill-mode: both;
+    transition: box-shadow 2s, scale 2s;
+}
+
+ul,
+li,
+a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    /* margin-bottom: 5%; */
+    font-family: "Orbitron";
+}
+
+
+
+a:link,
+a:visited {
+    color: white;
+    border: 1px solid #170328;
+    border-radius: 10px;
+    padding: 20px;
+    background: #800080;
+    background: radial-gradient(circle, rgba(128, 0, 128, 1) 0%, rgba(53, 11, 87, 1) 50%, rgba(27, 4, 46, 1) 100%);
+    background-size: 300% 100%;
+    animation: animationTest 5s linear infinite alternate;
+    animation-fill-mode: both;
+    transition: box-shadow 2s, scale 2s;
+}
+
+a:hover {
+    scale: 1.5;
+    box-shadow: 0 200px 100px -100px #170328 inset, 0px 0px 15px purple;
+}
+
+@keyframes animationTest {
+    0% {
+        background-position: 0% 25%;
+    }
+    25% {
+        background-position: 25% 50%;
+    }
+    50% {
+        background-position: 50% 75%;
+    }
+    75% {
+        background-position: 75% 100%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+
+
+
+
+#ongletContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.retourAccueil {
+    width: 20vw;
+    transition: none;
+}
+
+.retourAccueil > a:hover {
+    scale: 1;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60vw;
+    margin: 1%;
+    margin-bottom: 0.3%;
+    padding: 1%;
+    border: 1px solid #350b57;
+    box-shadow: 0px 0px 20px purple;
+    background-color: #170328;
+    border-radius: 20px;
+}
+
+#contact .champsObligatoires {
+    font-style: italic;
+    font-size: xx-small;
+    color: white;
+}
+
+#contact .nomTel {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+#contact .Mailentreprise {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+#contact textarea {
+    resize: none;
+    width: 100%;
+    height: 100px;
+    border-color: purple;
+    box-shadow: 0px 0px 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#contact input {
+    text-align: center;
+}
+
+#contact .message {
+    width: 90%;
+    padding: 10px;
+    justify-content: center;
+}
+
+#contact legend {
+    font-weight: bold;
+    color: white;
+}
+
+#contact input {
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid #350b57;
+    box-shadow: 0px 0px 20px;
+    border-radius: 5px;
+}
+
+#contact input:focus {
+    outline: none;
+    border-color: purple;
+}
+
+#contact button {
+    background-color: #350b57;
+    color: white;
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: box-shadow 2s, scale 2s;
+}
+
+#contact button:hover {
+    scale: 1.1;
+    box-shadow: 0 200px 100px -100px #170328 inset, 0px 0px 15px purple;
+}
+
+#contactinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #350b57;
+    box-shadow: 0px 0px 20px purple;
+    background-color: #170328;
+    border-radius: 20px;
+    color: white;
+    gap: 15px;
+}
+
+#contactinfo .liencontact {
+    color: white;
+    background: none;
+    border: none;
+    padding: 20px;
+    font-style: italic;
+    transition: scale 1s;
+}
+
+#contactinfo .liencontact:hover {
+    scale: 1.1;
+    box-shadow: none;
+}
+
+#contactinfo ul,
+#contactinfo li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.page-projets {
+    overflow-y: scroll;
+}
+
+#cartesProjets {
+    display: flex;
+    width: 100%;
+    
+}
+
+#cartesProjets .projets,
+#cartesProjets a:link,
+#cartesProjets a:visited {
+    color: white;
+    background: none;
+    border: none;
+    font-style: italic;
+}
+
+#cartesProjets a:hover {
+    scale: 1.0;
+    box-shadow: none;
+}
+
+#cartesProjets .projets {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px;
+    border: 1px solid purple;
+    box-shadow: 0px 0px 15px purple;
+    background-color: black;
+    border-radius: 10px;
+    font-size: larger;
+}
+
+#cartesProjets img {
+    width: 100%;
+    border: 1px solid purple;
+    border-radius: 5px;
+    transition: scale 1s;
+}
+
+#cartesProjets img:hover {
+    scale: 1.0;
+}
+
+#cartesProjets p {
+    flex: 1;
+    text-align: center;
+}
+
+#cursor-trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+
+
+@media (max-width: 768px) {
+
+    
+    .liens-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .liens-desktop {
+        display: none;
+    }
+
+ 
+
+    body {
+        overflow: auto;
+    }
+
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 5vh;
+    }
+
+    #contactinfo .liencontact:hover {
+        scale: 1.0;
+    }
+
+    .page-contact{
+        overflow-x:none !important;
+    }
+
+    #contact{
+        margin-top: 2%;
+    }
+
+    #contact,
+    #contactinfo {
+        width: 70vw;
+    }
+
+    #contactinfo {
+        flex-wrap: nowrap;
+    }
+
+    #contact button:hover {
+        scale: 1.0;
+    }
+
+    #cartesProjets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #cartesProjets .projets {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px;
+    }
+
+    #cartesProjets img {
+        width: 100%;
+        border: 1px solid purple;
+        border-radius: 5px;
+        transition: scale 1s;
+    }
+
+    #cartesProjets img:hover {
+        scale: 1.0;
+    }
+
+    #cartesProjets p {
+        text-align: center;
+    }
+
+    .retourAccueil {
+        width: 60vw;
+    }
+}

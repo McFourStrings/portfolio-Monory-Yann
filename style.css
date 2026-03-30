@@ -37,8 +37,33 @@
 
  }
 
+ .liens-mobile{
+    display: none;
+ }
+
+ .liens-desktop{
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+    li{
+        height: 50vh;
+        width: 20vw;
+        font-size: 3rem;
+    }
+    a:hover{
+        scale:1.05;
+    }
+  
+ }
+
+
  main {
      margin-bottom: 20vh;
+ }
+
+ .page-contact{
+    overflow-y: scroll;
  }
 
 
@@ -659,6 +684,15 @@
 
 
  @media (max-width: 768px) {
+
+   .liens-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+  .liens-desktop {
+        display: none;
+    }
 
      #cursor-trail,
      .trail-dot {
