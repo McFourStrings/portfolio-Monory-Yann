@@ -101,7 +101,7 @@ a:visited {
 }
 
 a:hover {
-    scale: 1.5;
+    scale: 1.0;
     box-shadow: 0 200px 100px -100px #170328 inset, 0px 0px 15px purple;
 }
 
@@ -147,7 +147,7 @@ footer {
 }
 
 .retourAccueil > a:hover {
-    scale: 1;
+    scale: 1.0;
 }
 
 form {
@@ -246,7 +246,7 @@ form {
 }
 
 #contact button:hover {
-    scale: 1.1;
+    scale: 1.0;
     box-shadow: 0 200px 100px -100px #170328 inset, 0px 0px 15px purple;
 }
 
@@ -275,7 +275,7 @@ form {
 }
 
 #contactinfo .liencontact:hover {
-    scale: 1.1;
+    scale: 1.0;
     box-shadow: none;
 }
 
