@@ -294,6 +294,7 @@ form {
 
 #cartesProjets {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     
 }
